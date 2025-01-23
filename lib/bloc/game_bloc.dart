@@ -21,6 +21,7 @@ class GameBloc extends Bloc<GameEvent, GameState> {
         log(event.index.toString());
         log(newGameState.cells.toString());
 
+// sSs
         if (newGameState.cells.contains(null)) {
           emit(GameWait(gameModel: newGameState));
         } else {
